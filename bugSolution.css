@@ -1,0 +1,27 @@
+/* Correct usage of calc() */
+.container {
+  width: 100%;
+  /* Ensure parent width is defined */
+}
+
+.element {
+  width: calc(100% - 20px); /* Correct spacing and consistent units */
+  background-color: lightblue;
+}
+
+.element2 {
+  height: calc(50% + 2em); /* Correct mixing of percentage and em unit */
+  background-color: lightcoral;
+}
+
+/* Avoid incorrect usage */
+/*.incorrect {
+  width:calc(100%-10px); /* Missing space */
+  background-color: lightgreen;
+}*/
+
+/*.incorrect2 {
+  height: calc(50% + 2em); /* Incorrect mixing of units */
+  width: calc( (100% - 20px) - 10% ); /* Nested calc, but needs consistent spacing */
+  background-color: lightgray;
+}*/
